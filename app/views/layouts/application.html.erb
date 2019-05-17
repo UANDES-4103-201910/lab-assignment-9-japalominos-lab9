@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lab4Assignment</title>
+    <title>Lab9Assignment</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,65 @@
   </head>
 
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '2135055610119751',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v3.3'
+        });
+
+
+          
+        FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+        });
+
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+        function statusChangeCallback(response) {
+            if(response.status === 'conected'){
+                console.log('Logged in and authenticated')
+            }
+            else{
+                console.log('Not authenticated')
+            }
+        }
+        
+        function checkLoginState() {
+          FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+          });
+        }
+    </script>
   	<p id="notice"><%= notice %></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+            <button type="button" class="btn btn-secondary">Sign-in</button>
+            <button type="button" class="btn btn-primary">Log-in</button>
+            <button type="button" class="btn btn-danger">Log-out</button>
+        </div>
+      </div>
+    </div>
+    
     <%= yield %>
+    
+    <fb:login-button 
+      scope="public_profile,email"
+      onlogin="checkLoginState();">
+    </fb:login-button>
   </body>
 </html>
