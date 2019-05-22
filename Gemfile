@@ -65,4 +65,5 @@ gem 'therubyracer'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'jquery-rails'
+gem 'cancancan'
 
