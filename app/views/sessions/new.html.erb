@@ -1,4 +1,58 @@
- <%= form_for(:session, url: log_in_path) do |f| %>
+<script>
+      function statusChangeCallback(response) {
+            console.log('statusChangeCallback');
+            console.log(response)
+            if(response.status === 'conected'){
+                testAPI();
+
+            }
+            else{
+                document.getElementById('status').innerHTML= 'Please log' + 'into this app.';
+
+            }
+        }
+        
+      function checkLoginState() {
+          FB.getLoginStatus(function(response) {
+            statusChangeCallback(response);
+          });
+        }
+    
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '2135055610119751',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v3.3'
+        });
+
+
+          
+        FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+        });
+
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    
+       function testAPI() {
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me', function(response) {
+          console.log('Successful login for: ' + response.name);
+          document.getElementById('status').innerHTML =
+            'Thanks for logging in, ' + response.name + '!';
+        });
+        }
+        
+    </script> 
+<%= form_for(:session, url: log_in_path) do |f| %>
   <div class="form-group">
     <%= f.label :email,"Email" %><br />
     <%= f.email_field :email, autofocus: true  %>
@@ -14,3 +68,6 @@
   <br>
 <% end %>
 <%= link_to 'Sign In', registrations_path %>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=2135055610119751&autoLogAppEvents=1"></script>
+<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="true" data-use-continue-as="false" scope="public_profile,email" onlogin="checkLoginState();"></div>

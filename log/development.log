@@ -1517,3 +1517,740 @@ Started GET "/" for ::1 at 2019-05-16 21:41:00 -0400
 Processing by SessionsController#new as HTML
   Rendering sessions/new.html.erb within layouts/application
   Rendered sessions/new.html.erb within layouts/application (2.5ms)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 11:48:22 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (82.5ms)
+Started GET "/" for ::1 at 2019-05-22 11:48:24 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 2081ms (Views: 2035.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 188ms (Views: 184.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2019-05-22 11:52:04 -0400
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (154.4ms)
+Completed 200 OK in 344ms (Views: 256.9ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 12:08:22 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 1829ms (Views: 1810.8ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 12:23:53 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 543ms (Views: 529.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 12:26:36 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 102ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 12:26:39 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 90ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 12:27:01 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 519ms (Views: 505.3ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 13:24:52 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 883ms (Views: 862.1ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 13:27:02 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 139ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:27:02 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (284.7ms)
+Completed 200 OK in 998ms (Views: 902.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:27:19 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:27:20 -0400
+Started GET "/users/auth/facebook/callback?code=AQDnet0NitUUI2erIIGtYxunPdVBefd_XF7RTg6Z126aOy5COowf2ZAnaCdjG5HHFZ2nsJGaFg5pUXfSu2gMWHVhR0z87PjRguEmmS3RfQrYzzKIabNyCR7hmrSLwpEavOoRdri5yBBInOfXuOOPs3J8mmWn9xYg4eHCV-a4IKfMRp1lx0DPMAWXHJDTkAwDrxxrSpWPGQ5kn5Zo_8xLlp9dnR8bAzbllt321-S63OcnzXooTxnJZueFtb_BE8eYxOxDHLGeI-CeI0Xyyf1IuLXruDZCiMjyE_77CS_aManm7WXtNmYSex4sTSCM91NMztfiv9I3PcdOHUK4JRoC299v&state=6d85faaf66f5e8435ba5067916a49dee182fac53d9837ac2" for ::1 at 2019-05-22 13:27:20 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDnet0NitUUI2erIIGtYxunPdVBefd_XF7RTg6Z126aOy5COowf2ZAnaCdjG5HHFZ2nsJGaFg5pUXfSu2gMWHVhR0z87PjRguEmmS3RfQrYzzKIabNyCR7hmrSLwpEavOoRdri5yBBInOfXuOOPs3J8mmWn9xYg4eHCV-a4IKfMRp1lx0DPMAWXHJDTkAwDrxxrSpWPGQ5kn5Zo_8xLlp9dnR8bAzbllt321-S63OcnzXooTxnJZueFtb_BE8eYxOxDHLGeI-CeI0Xyyf1IuLXruDZCiMjyE_77CS_aManm7WXtNmYSex4sTSCM91NMztfiv9I3PcdOHUK4JRoC299v", "state"=>"6d85faaf66f5e8435ba5067916a49dee182fac53d9837ac2"}
+  [1m[36mUser Load (28.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (42.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 592ms (ActiveRecord: 71.7ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:27:22 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 31ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:27:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 77ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-05-22 13:27:59 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/passwords/new.html.erb within layouts/application (44.7ms)
+Completed 200 OK in 182ms (Views: 101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:28:06 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 136ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:28:10 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:28:10 -0400
+Started GET "/users/auth/facebook/callback?code=AQDyj-SpdQI3VEVhjM8B5Mmw-wMSDcAzZj1yJ8jEBBxkMPVFOfjaIzm7zzPo2kIq9rq5orILQ9NhzCtV0O_XjJFZUXwU_B4tSr39FLGT5RYJM_YR94IKU48NhSrKea1wmE0RVzHM8lC1VKa-92o7to9SCSWaCb404qoNHuDSUaqMj0K3LsTiR8z-85dgq7piODFsNKY1M2S_l7uOZD8gHqW11KKazjAUBzNouXRvxaADjnRMowKSIxCsc78j7IY3MIBdsvQ6BPgGvg1eYQ00aet5sPpnYoA5mlsB48Ug3tZOiilgp8s6A76HULNFES2uXVvdGMqbKxl8VlNDen543CC3&state=4924950892667050db943f7c3385e8eeaebc299e8e7e0422" for ::1 at 2019-05-22 13:28:10 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDyj-SpdQI3VEVhjM8B5Mmw-wMSDcAzZj1yJ8jEBBxkMPVFOfjaIzm7zzPo2kIq9rq5orILQ9NhzCtV0O_XjJFZUXwU_B4tSr39FLGT5RYJM_YR94IKU48NhSrKea1wmE0RVzHM8lC1VKa-92o7to9SCSWaCb404qoNHuDSUaqMj0K3LsTiR8z-85dgq7piODFsNKY1M2S_l7uOZD8gHqW11KKazjAUBzNouXRvxaADjnRMowKSIxCsc78j7IY3MIBdsvQ6BPgGvg1eYQ00aet5sPpnYoA5mlsB48Ug3tZOiilgp8s6A76HULNFES2uXVvdGMqbKxl8VlNDen543CC3", "state"=>"4924950892667050db943f7c3385e8eeaebc299e8e7e0422"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 239ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:28:11 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:28:11 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:28:13 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:28:13 -0400
+Started GET "/users/auth/facebook/callback?code=AQA7mu_FobPTnE_M0ZVFC6w1j93p0ubDN1nbjhKnKVJfSRWpJRiiMFZRVMHwD5eJq3cWqqDPhuk9fEXGYiaWz4po4jjf1urAafBuOv3yqBydenP5zQ7c8fGqLW2mrdLfzv7AvdjX83QcUJznaGFR67pipQtAVD3UOESvTGkNAs0LOuDU65-Z2j0DGkTgrPRSlo6iBUA3w9jc55nNLRQBZ6da3v_l195r4r5IpMC-YAHjYQT9SHm0kiCL1TaunPr31Hg9SoGHnejaRNsqml2EUnrv19VnQSO0lBMezKIxSQVNh4rXfN69hLAaDHUPoh5nRNHlYtvpTzAzOkkOQZY2_FvX&state=7b02dc0fa281aaa1e928d3a81769278124bdfe44a1a55d3c" for ::1 at 2019-05-22 13:28:13 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQA7mu_FobPTnE_M0ZVFC6w1j93p0ubDN1nbjhKnKVJfSRWpJRiiMFZRVMHwD5eJq3cWqqDPhuk9fEXGYiaWz4po4jjf1urAafBuOv3yqBydenP5zQ7c8fGqLW2mrdLfzv7AvdjX83QcUJznaGFR67pipQtAVD3UOESvTGkNAs0LOuDU65-Z2j0DGkTgrPRSlo6iBUA3w9jc55nNLRQBZ6da3v_l195r4r5IpMC-YAHjYQT9SHm0kiCL1TaunPr31Hg9SoGHnejaRNsqml2EUnrv19VnQSO0lBMezKIxSQVNh4rXfN69hLAaDHUPoh5nRNHlYtvpTzAzOkkOQZY2_FvX", "state"=>"7b02dc0fa281aaa1e928d3a81769278124bdfe44a1a55d3c"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 217ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:28:14 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:28:14 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 73ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:28:15 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:28:15 -0400
+Started GET "/users/auth/facebook/callback?code=AQCdAsWetgQBi50mxZ6K5d8fdXKdExsWEX8O67v5ZvUhfZzlDMNyYCk3o-S_riNUOnxlztG1pxH0Fvz1TLiD5Yh5is-syfK6Q072kgv18Jmh7gzXqZlwfm6vteHs5tO5RjVSdbk5Y93Hf28GBzgIJgqVfB3yKKLvRHPvqfx3DVekopvL6zgP66Zz_NF-8RO6FrxAwp3vVGWCyde5hppRa5hs_hniK4Se_ESqgPKXIHs1RrjWFMlPxskEaAymteffTwC2e8Bl2YMxl980oF2HvbCOaQJzJb2uyNoozbdqSp60Vng_RFp7HzX_Almx9vBZQKSRKeXam9iAUlBBML9WFiSB&state=66bf40948422c491733b020f1bc3b7b363da89c1fa17c64d" for ::1 at 2019-05-22 13:28:15 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCdAsWetgQBi50mxZ6K5d8fdXKdExsWEX8O67v5ZvUhfZzlDMNyYCk3o-S_riNUOnxlztG1pxH0Fvz1TLiD5Yh5is-syfK6Q072kgv18Jmh7gzXqZlwfm6vteHs5tO5RjVSdbk5Y93Hf28GBzgIJgqVfB3yKKLvRHPvqfx3DVekopvL6zgP66Zz_NF-8RO6FrxAwp3vVGWCyde5hppRa5hs_hniK4Se_ESqgPKXIHs1RrjWFMlPxskEaAymteffTwC2e8Bl2YMxl980oF2HvbCOaQJzJb2uyNoozbdqSp60Vng_RFp7HzX_Almx9vBZQKSRKeXam9iAUlBBML9WFiSB", "state"=>"66bf40948422c491733b020f1bc3b7b363da89c1fa17c64d"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 218ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:28:16 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:28:16 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 73ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:28:22 -0400
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:28:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 84ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 13:33:09 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 35ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:33:09 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 477ms (Views: 444.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:37:44 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:37:44 -0400
+Started GET "/users/auth/facebook/callback?code=AQDGcRrz1VrrEDcGYjGZ_P4Bt5bU8GzVx3Qo1ZMRYImHSepmwg4cB7b1pEuio-U-r7sqIZix8sBy-XTZhiMx2VxFNiPZjgOqH000xoCUvJlSm5zKGCFgkrRLQfm2rpsJyIGxw_7QBDieNAO226rdfciIpD7ASe6Zw6z_I_0xBDb3oBemKFQ8VMkuoDswbOg1VZ4E-w6AQ8iMUIeUqSo9SuefMQJRuUCr50r4ekB0PsEQPZfKECSmY-s1sdu81YQxGydVOZ2sUfSYAuCqp8FvYM4YWRt2VFxN2dWoLYH8H-H5BQIhcGXF-gj-ZkwHYBwW34mTlCbFtPX9aoPEtrW40DxJ&state=4f954ad9e93a929e89d179c9a155458219310fbeb5980618" for ::1 at 2019-05-22 13:37:45 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDGcRrz1VrrEDcGYjGZ_P4Bt5bU8GzVx3Qo1ZMRYImHSepmwg4cB7b1pEuio-U-r7sqIZix8sBy-XTZhiMx2VxFNiPZjgOqH000xoCUvJlSm5zKGCFgkrRLQfm2rpsJyIGxw_7QBDieNAO226rdfciIpD7ASe6Zw6z_I_0xBDb3oBemKFQ8VMkuoDswbOg1VZ4E-w6AQ8iMUIeUqSo9SuefMQJRuUCr50r4ekB0PsEQPZfKECSmY-s1sdu81YQxGydVOZ2sUfSYAuCqp8FvYM4YWRt2VFxN2dWoLYH8H-H5BQIhcGXF-gj-ZkwHYBwW34mTlCbFtPX9aoPEtrW40DxJ", "state"=>"4f954ad9e93a929e89d179c9a155458219310fbeb5980618"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 290ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:37:45 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:37:45 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 67ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-22 13:42:09 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 306ms (Views: 303.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:42:17 -0400
+Processing by SessionsController#new as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:42:17 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.1ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 268ms (Views: 265.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-22 13:42:19 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (2.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 97ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-22 13:42:30 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 85ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:42:32 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2019-05-22 13:42:35 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.0ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/passwords/new.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 99ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:42:38 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:42:38 -0400
+Started GET "/users/auth/facebook/callback?code=AQCWeqU5WEFGFTM5xjXDTgqMaiuaLAw7g5zhjiyEMRqiv0OI_iWtclOVkM4XQYU5v24cN9qO2GZsSFAYsYzL0wEmTXKq8yQj9X778V1h_EnUBx51ThBQCMWpfFeGlKv9EurAilylCz3dktmisy0B5nxMualfqig0IBHWZCNM5awzzzIfNkDQbbiL-mPvvg5ruB8hELrfdhQEI1ptEk3oapoqQyQQ6e-U-CDNkfOmnx1xTbWzAm9uVG87xuM7h8xMUXxPAafhFd-sHDI9FoREGBUEw8-BWXMhWI6I64LAbs2FPUgEoiCw_lSUZM-FClVHNXBjeCxfhINqiaI5sT6ByIYw&state=5864180b6fa96df8ba7513a788021e5f901abd6666b78dce" for ::1 at 2019-05-22 13:42:38 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCWeqU5WEFGFTM5xjXDTgqMaiuaLAw7g5zhjiyEMRqiv0OI_iWtclOVkM4XQYU5v24cN9qO2GZsSFAYsYzL0wEmTXKq8yQj9X778V1h_EnUBx51ThBQCMWpfFeGlKv9EurAilylCz3dktmisy0B5nxMualfqig0IBHWZCNM5awzzzIfNkDQbbiL-mPvvg5ruB8hELrfdhQEI1ptEk3oapoqQyQQ6e-U-CDNkfOmnx1xTbWzAm9uVG87xuM7h8xMUXxPAafhFd-sHDI9FoREGBUEw8-BWXMhWI6I64LAbs2FPUgEoiCw_lSUZM-FClVHNXBjeCxfhINqiaI5sT6ByIYw", "state"=>"5864180b6fa96df8ba7513a788021e5f901abd6666b78dce"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 222ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:42:39 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:42:39 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.7ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 70ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:42:41 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:42:42 -0400
+Started GET "/users/auth/facebook/callback?code=AQDfeJb8MVnuQqSEm65sXzmndA3wKFpVvqMQ-rwglJ88AUrKzCS--OBttWQa7qhtshz6wECiU-pgUtqtO8g6vsqPpT3OqF-jgxYFAijDyoaA270UcpRHPuhznPrKKe1FJ_w4fqbNS3xsU4XtNZSLkTpRQ3PbTSyc_Xq5TIYgWLJC8TD1p6AM-1bBI3g9VW8COSukXroY0vWgsHfXzOtKtUS1ezrksm2wuOIyX_BoWNv0UPwE-rwhkGRikunWdL2kYzn3KA4fDQ4FYud_ho2fsvAcAuO45DqufPvNMAirjVaJVPnxAgTNxkKM_yEVgnnt8C7iJjSOElCdBl-YtXNRvMMa&state=86c7be0046089df1946e86ad1b2fb2da10d7d79d11ccc4ab" for ::1 at 2019-05-22 13:42:42 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDfeJb8MVnuQqSEm65sXzmndA3wKFpVvqMQ-rwglJ88AUrKzCS--OBttWQa7qhtshz6wECiU-pgUtqtO8g6vsqPpT3OqF-jgxYFAijDyoaA270UcpRHPuhznPrKKe1FJ_w4fqbNS3xsU4XtNZSLkTpRQ3PbTSyc_Xq5TIYgWLJC8TD1p6AM-1bBI3g9VW8COSukXroY0vWgsHfXzOtKtUS1ezrksm2wuOIyX_BoWNv0UPwE-rwhkGRikunWdL2kYzn3KA4fDQ4FYud_ho2fsvAcAuO45DqufPvNMAirjVaJVPnxAgTNxkKM_yEVgnnt8C7iJjSOElCdBl-YtXNRvMMa", "state"=>"86c7be0046089df1946e86ad1b2fb2da10d7d79d11ccc4ab"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 237ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:42:43 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:42:43 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (6.4ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 121ms (Views: 118.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:43:33 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 95ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:44:04 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-22 13:44:04 -0400
+Started GET "/users/auth/facebook/callback?code=AQAJNqXD7kCCV--ACgxXT7bBw2Gytwf2qg3Dk51tdbhw0H6meJgNrFaSAY68wFI63_aTIl7Eujc1Bq6QEQt4flFp2v_WHThlN64fm9AidnZcvP646GFfb_GTJ7jZi43bpKNcm-jytmGK1ZrZZpdmO7FfSjXHQXVC74UvAEKQlp05zcPTqPipXoJpXyWHudbi02gz1Layd_nudHCRZnMC9dly1RnhFb9eve809P4id-976OLpKsfIBTGljXuvDIemBp_juY-1rBl8TJKmPOOFCNN4Qgg8kGs0SXHGpkII7phOG_pI6qpHkauRsYx-ACuj9hADbZ4a16Hbigxlz1LS3LXe&state=d7f0246f0e2d048466738ad961548208871dbe7907fff00f" for ::1 at 2019-05-22 13:44:04 -0400
+Processing by CallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQAJNqXD7kCCV--ACgxXT7bBw2Gytwf2qg3Dk51tdbhw0H6meJgNrFaSAY68wFI63_aTIl7Eujc1Bq6QEQt4flFp2v_WHThlN64fm9AidnZcvP646GFfb_GTJ7jZi43bpKNcm-jytmGK1ZrZZpdmO7FfSjXHQXVC74UvAEKQlp05zcPTqPipXoJpXyWHudbi02gz1Layd_nudHCRZnMC9dly1RnhFb9eve809P4id-976OLpKsfIBTGljXuvDIemBp_juY-1rBl8TJKmPOOFCNN4Qgg8kGs0SXHGpkII7phOG_pI6qpHkauRsYx-ACuj9hADbZ4a16Hbigxlz1LS3LXe", "state"=>"d7f0246f0e2d048466738ad961548208871dbe7907fff00f"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:44:05 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-22 13:44:05 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-22 13:45:56 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 85ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-05-22 13:46:09 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EQcgEIMfehmMkClhn6FT1CCS4MnCkRnsAgUr9m0VYHYOsOBp74cjuFC8WlJt7vw17HJ4sI6JxIlVuOWH6J+9pQ==", "user"=>{"email"=>"juako.palomo@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (2.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 386ms (Views: 110.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-05-22 13:46:17 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ljeFRmpmhbWO+l57JN/KNEK/PLDGz85BU4yCN8X9pIF6nDL/sAOm+3Yf/CIv46xrLBbe36rg3Pv8tLg2ZRBNnw==", "user"=>{"email"=>"juako.palomo@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 318ms (Views: 69.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for ::1 at 2019-05-22 13:46:27 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"86VulAWtTitXD1Bim9ZyCkwYysq9bc5xQRbMNQ2zQM0fDtkt38htZa/q8juQ6hRVIrEopdFC3MvuLvY0rV6p0w==", "user"=>{"email"=>"juako.palomo@hotmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE User Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (71.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at", "encrypted_password") VALUES (?, ?, ?, ?)[0m  [["email", "juako.palomo@hotmail.com"], ["created_at", "2019-05-22 17:46:28.125286"], ["updated_at", "2019-05-22 17:46:28.125286"], ["encrypted_password", "$2a$11$KrFXhoa2DShIR5UfUCSFQux0eAKlBwxvTmAbw05Aqd9yJYH355bYe"]]
+  [1m[35m (186.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 517ms (ActiveRecord: 257.9ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:46:28 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 59ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/login" for ::1 at 2019-05-22 13:46:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gcue5Eng/IWjqdeVGVXBlX2nIyomdSN6Tl/3++/CQb/1YCldk4Xfy1tMdcwSaafKEw7BRUpaMcDhZ836Ty+ooQ==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 325ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:46:52 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 69ms (Views: 60.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/login" for ::1 at 2019-05-22 13:47:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0PA2yqNEv9C1vZpm0WLcXjAmL8laQ+68HotDQEdM+SI8W4FzeSGcnk1YOD/aXroBXo/NpjZs/Aaxs3lB56EQPA==", "session"=>{"email"=>"juako.palomo@hotmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 352ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:47:11 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 13:47:14 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 89ms (Views: 66.7ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 13:47:35 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 501ms (Views: 426.2ms | ActiveRecord: 1.7ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 13:59:36 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 510ms (Views: 426.0ms | ActiveRecord: 2.1ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 14:01:04 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 577ms (Views: 481.2ms | ActiveRecord: 3.8ms)
+
+
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby1/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-22 14:06:44 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 482ms (Views: 409.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 14:12:29 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 145ms (Views: 132.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-05-22 14:15:31 -0400
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 166ms (Views: 154.8ms | ActiveRecord: 0.6ms)
+
+
