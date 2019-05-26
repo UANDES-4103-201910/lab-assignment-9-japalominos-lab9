@@ -3108,3 +3108,302 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 116ms (Views: 101.2ms | ActiveRecord: 0.9ms)
 
 
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby2/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby2/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+DEPRECATION WARNING: Leaving `ActiveRecord::ConnectionAdapters::SQLite3Adapter.represent_boolean_as_integer`
+set to false is deprecated. SQLite databases have used 't' and 'f' to serialize
+boolean values and must have old data converted to 1 and 0 (its native boolean
+serialization) before setting this flag to true. Conversion can be accomplished
+by setting up a rake task which runs
+
+  ExampleModel.where("boolean_column = 't'").update_all(boolean_column: 1)
+  ExampleModel.where("boolean_column = 'f'").update_all(boolean_column: 0)
+
+for all models and all boolean columns, after which the flag must be set to
+true by adding the following to your application.rb file:
+
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+ (called from <top (required)> at /home/japalominos/Ruby2/lab-assignment-9-japalominos-lab9/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2019-05-25 21:47:41 -0400
+Started GET "/" for ::1 at 2019-05-25 21:47:41 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 340ms (ActiveRecord: 0.0ms)
+
+
+Completed 401 Unauthorized in 272ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-25 21:47:43 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (1789.7ms)
+Completed 200 OK in 8592ms (Views: 8454.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:02 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:03 -0400
+Started GET "/users/auth/facebook/callback?code=AQBLxa_CMQD4B0DvVgp8pfZBBHhssbInys2EZTNHWkdj6chrpkYRCwd-_vcGijjG2gayNlOLYpuw1MrtMJXRtlwRSe6mTp5-R4KLiFuVT1cYJu8PFPsQspsAfHP5y9KW3T-9HUZlJsCy4SLMYZkWNX-CnArTVVPq4uyUnWjtgZha8aPJLx9A3YLt60ScXBuhCkHdwqD9CGrjTHUQRxX8hOhnOZAsAt0x_KPTO8XZ4cDf20OdK_-TFTiu_97aujr3OEvInHxBotgCxHztmBI_vtJ_bBt-Zu1jebyVa_wEr-Ns7yDhxI2CI4n56pGUcW_X2VKBNjgFDiain9jc5I2iwh0A&state=1b214bfb739f68e713efc0f55fd0a8b6d206ddc5a9b06be3" for ::1 at 2019-05-25 21:48:03 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBLxa_CMQD4B0DvVgp8pfZBBHhssbInys2EZTNHWkdj6chrpkYRCwd-_vcGijjG2gayNlOLYpuw1MrtMJXRtlwRSe6mTp5-R4KLiFuVT1cYJu8PFPsQspsAfHP5y9KW3T-9HUZlJsCy4SLMYZkWNX-CnArTVVPq4uyUnWjtgZha8aPJLx9A3YLt60ScXBuhCkHdwqD9CGrjTHUQRxX8hOhnOZAsAt0x_KPTO8XZ4cDf20OdK_-TFTiu_97aujr3OEvInHxBotgCxHztmBI_vtJ_bBt-Zu1jebyVa_wEr-Ns7yDhxI2CI4n56pGUcW_X2VKBNjgFDiain9jc5I2iwh0A", "state"=>"1b214bfb739f68e713efc0f55fd0a8b6d206ddc5a9b06be3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 1086ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:07 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.0ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (175.5ms)
+Completed 200 OK in 760ms (Views: 757.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:11 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:12 -0400
+Started GET "/users/auth/facebook/callback?code=AQDF1dN9C2kkDl16BXpb3GW_Bql46ydlkhyC5bFfQ5hf_gkCTJyLFGTL_KzN2933jQ5AiG90ajSsY-JcG4iLQYi7vtPl0ZBXL0V2eBE_f5DwSAm3mt2uLtY4-EmW0sj3ChmbkM3IWelHT6PctPA-uqgAUdYyxCw4jZhJeeD-9mVziVH3Ca17Bq1DkXMU8WUc3DNYOqJvgYqUjl6orJvJe8l5qGhWHdWZ54lFr3kz03f0m--odAuT2PhX-QGYJV9HiAqRPTFtDOm3xntIb5x7ZQnXNhJ0ltfiPPMTGldut5hyPLPN8wceyXoZsVtgZz8ufCMiHI3FAiiIsvP1CwOc5Gop&state=936bf15670c41b001830b2d6608f401a103edf4175cf78ca" for ::1 at 2019-05-25 21:48:13 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDF1dN9C2kkDl16BXpb3GW_Bql46ydlkhyC5bFfQ5hf_gkCTJyLFGTL_KzN2933jQ5AiG90ajSsY-JcG4iLQYi7vtPl0ZBXL0V2eBE_f5DwSAm3mt2uLtY4-EmW0sj3ChmbkM3IWelHT6PctPA-uqgAUdYyxCw4jZhJeeD-9mVziVH3Ca17Bq1DkXMU8WUc3DNYOqJvgYqUjl6orJvJe8l5qGhWHdWZ54lFr3kz03f0m--odAuT2PhX-QGYJV9HiAqRPTFtDOm3xntIb5x7ZQnXNhJ0ltfiPPMTGldut5hyPLPN8wceyXoZsVtgZz8ufCMiHI3FAiiIsvP1CwOc5Gop", "state"=>"936bf15670c41b001830b2d6608f401a103edf4175cf78ca"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 373ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:14 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.8ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 147ms (Views: 142.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:16 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:17 -0400
+Started GET "/users/auth/facebook/callback?code=AQDxeDsw7vEdYODn6lPU1kcGMJGy52rQe1ADgKbb2l2tYL9vN_t_LcPbju9gPvJ67wKMj6jyVwXY6UwYYldTrO5O3KgtWRH18-NJoP7osxp8sxLNUdr7PC3vJYP7vfOzd5fe6Mdqoh_b0HT8ziyCqV92iw2ERci1KEleepfW2ZLXNB5WOP5MnZyQQLzEUefQgoUqBoVfq0VuqJbAoVcwEzqGN-JeqMILZj4T8lnUst04PkFHO3_5JodhK-ezCP3fsdNPGke2yrVEy2qVK3IxvLe1vsAr163Rz_KHoyI0xQwPC1HXK8c0obeImAu0JBTUsGe_pvK4GJ_doZ-8SzgEcPJ0&state=20341700f0d92686b4315e7e41629a9a22e7203e537715bb" for ::1 at 2019-05-25 21:48:17 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDxeDsw7vEdYODn6lPU1kcGMJGy52rQe1ADgKbb2l2tYL9vN_t_LcPbju9gPvJ67wKMj6jyVwXY6UwYYldTrO5O3KgtWRH18-NJoP7osxp8sxLNUdr7PC3vJYP7vfOzd5fe6Mdqoh_b0HT8ziyCqV92iw2ERci1KEleepfW2ZLXNB5WOP5MnZyQQLzEUefQgoUqBoVfq0VuqJbAoVcwEzqGN-JeqMILZj4T8lnUst04PkFHO3_5JodhK-ezCP3fsdNPGke2yrVEy2qVK3IxvLe1vsAr163Rz_KHoyI0xQwPC1HXK8c0obeImAu0JBTUsGe_pvK4GJ_doZ-8SzgEcPJ0", "state"=>"20341700f0d92686b4315e7e41629a9a22e7203e537715bb"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 579ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:19 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (12.6ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (122.4ms)
+Completed 200 OK in 304ms (Views: 301.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:21 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:21 -0400
+Started GET "/users/auth/facebook/callback?code=AQCS9G6ZG1Zrh3Fic34BebWVnkrxly45AUEBx4xnqqQY8lF42wVE-5T9x4XYGbxorpMePxtm1QbpylclI4-dsYLjJ5wOQ01ExjJsKY7cvnzrBo043REZmUm9QtxbNS4mR1W3xHZ_9oCnsjuLVNG7E-K8eRItKf_2fVnpvjHR_luHkLhmiZfPQmDQ3xY3D2r_6zWf9Ew-7ppOfG7CRToOIX_dy358OnN7xc0X8qQtWKhbfEW5cUJJ-wHPwjGeybbLio0rYyDFGmWPUSR1rJ9ZHuJ4FVpDEmAPcrcRS2-hDna_0Fkef9_bd6H6s23yzsRL1rjJ7igY8HANMNNIZRcXnJn3&state=8646bcd8c7d4034def692e377fcd2d3d29c93c17619e6d51" for ::1 at 2019-05-25 21:48:22 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCS9G6ZG1Zrh3Fic34BebWVnkrxly45AUEBx4xnqqQY8lF42wVE-5T9x4XYGbxorpMePxtm1QbpylclI4-dsYLjJ5wOQ01ExjJsKY7cvnzrBo043REZmUm9QtxbNS4mR1W3xHZ_9oCnsjuLVNG7E-K8eRItKf_2fVnpvjHR_luHkLhmiZfPQmDQ3xY3D2r_6zWf9Ew-7ppOfG7CRToOIX_dy358OnN7xc0X8qQtWKhbfEW5cUJJ-wHPwjGeybbLio0rYyDFGmWPUSR1rJ9ZHuJ4FVpDEmAPcrcRS2-hDna_0Fkef9_bd6H6s23yzsRL1rjJ7igY8HANMNNIZRcXnJn3", "state"=>"8646bcd8c7d4034def692e377fcd2d3d29c93c17619e6d51"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 634ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:24 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (4.4ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (152.6ms)
+Completed 200 OK in 376ms (Views: 373.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:25 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:25 -0400
+Started GET "/users/auth/facebook/callback?code=AQCsF4sDqWnLM0pbBgErN-J4hSF6jIHechJl7KXEKEI9N74pJpdKyiA2ozL-B6nZtFieSBuXP4pzf3wuXgj_Y4HkqWNB597fPXc-804u58PMb1LYaQBZi_JCIRdjV2zJRxw6Uv2OuzUnNB9Xgnif-fw2yfB7kuqz29WAw4JpZjGcxoJQ_JZRfj98qwZuOyLpPFD3DPbRjrRw6NXbaGGwULDxRKUSzGDkXRWv4D25HzQXxUWlq3ezZwzoeBvVjTDuObmj4Juxv3KbWCOeRNs5LDI26b-6GEASH903lrzspKSDVXybwkMxfFRShY87wcCOYJMT2ogYlfLRfgwtdUB3W8D1&state=8575fb5eb2ead7ec8f8377c5bdb1d0d3fddc113e3cd65041" for ::1 at 2019-05-25 21:48:26 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCsF4sDqWnLM0pbBgErN-J4hSF6jIHechJl7KXEKEI9N74pJpdKyiA2ozL-B6nZtFieSBuXP4pzf3wuXgj_Y4HkqWNB597fPXc-804u58PMb1LYaQBZi_JCIRdjV2zJRxw6Uv2OuzUnNB9Xgnif-fw2yfB7kuqz29WAw4JpZjGcxoJQ_JZRfj98qwZuOyLpPFD3DPbRjrRw6NXbaGGwULDxRKUSzGDkXRWv4D25HzQXxUWlq3ezZwzoeBvVjTDuObmj4Juxv3KbWCOeRNs5LDI26b-6GEASH903lrzspKSDVXybwkMxfFRShY87wcCOYJMT2ogYlfLRfgwtdUB3W8D1", "state"=>"8575fb5eb2ead7ec8f8377c5bdb1d0d3fddc113e3cd65041"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 743ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:28 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (3.4ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (14.8ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (322.1ms)
+Started GET "/users/auth/facebook/callback?code=AQCOWj1I0X3a6VbrCAoE9kIqXzeKIZzVcvvxocPQVbbKN2JdM8nPBW-sMGqNRIFMshv8knFel97AkPjhTFyH_4UeVgcFfXXEQckjbbPH3Hl6TLlnpuXwIZYhsx5sFsHrrh9vsrx6Vca3BQQmQ6zlOMAIj08p2XYVDg6yS98gYbOReiqsYFCSETNE6xFF3KmFgdv_TM9bgmUQX1fsH-e7kebyoHB_iwWFOWSBLtGHdK-xKeIELnrNsT72FzvN2xUAzUq44FGSMAqu4cgvx6aCrOfx9o7BbjDftPPyWec4dx0G0NPrEnkO0WJgSvnfp22pf76hMzxDsP9-Qdc2v-CD-3Nw&state=8eaef1a89d2c3f19335ed787d4b527d9e8accedc39a44d08" for ::1 at 2019-05-25 21:48:29 -0400
+Completed 200 OK in 670ms (Views: 665.4ms | ActiveRecord: 0.0ms)
+
+
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"AQCOWj1I0X3a6VbrCAoE9kIqXzeKIZzVcvvxocPQVbbKN2JdM8nPBW-sMGqNRIFMshv8knFel97AkPjhTFyH_4UeVgcFfXXEQckjbbPH3Hl6TLlnpuXwIZYhsx5sFsHrrh9vsrx6Vca3BQQmQ6zlOMAIj08p2XYVDg6yS98gYbOReiqsYFCSETNE6xFF3KmFgdv_TM9bgmUQX1fsH-e7kebyoHB_iwWFOWSBLtGHdK-xKeIELnrNsT72FzvN2xUAzUq44FGSMAqu4cgvx6aCrOfx9o7BbjDftPPyWec4dx0G0NPrEnkO0WJgSvnfp22pf76hMzxDsP9-Qdc2v-CD-3Nw", "state"=>"8eaef1a89d2c3f19335ed787d4b527d9e8accedc39a44d08"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 54ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-05-25 21:48:29 -0400
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-25 21:48:30 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (4.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (90.9ms)
+Completed 200 OK in 300ms (Views: 295.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:32 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:32 -0400
+Started GET "/users/auth/facebook/callback?code=AQA-KtVo9nS5o_CY79F0bLAsr57n-cF0wus4NZphDJ2LNfkpJhniNgpm6YaSlrwPKjJ5vZO_rhQ_wQZxSRhJmP-3drISEk4Wh84RHChH3hIdZJC_zIrgrp-d9kDAHpvvlHOKg5iHc_0cMzG_Dn_FJQqsbk4BwX9yyOqQ_WHySoAXh_JKcQUztV-Eu35S_ugC4ZjmSGhy2Cigy_MNj9Al_S06_5XIvr4Zod2weVXZUHxv1HSKOKcXzafhlx3AEv1-7g6j4tHVBkaSC76cbq85DJqs3BaW-ww-Wv0w_DaT_12aJAGakkDsQflA3tbS4irVN0Po37b0iLfo_uV3YGkcriXu&state=8d45906a63d343f7f38b322f8f3fb64f6afe791bd89fa909" for ::1 at 2019-05-25 21:48:33 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQA-KtVo9nS5o_CY79F0bLAsr57n-cF0wus4NZphDJ2LNfkpJhniNgpm6YaSlrwPKjJ5vZO_rhQ_wQZxSRhJmP-3drISEk4Wh84RHChH3hIdZJC_zIrgrp-d9kDAHpvvlHOKg5iHc_0cMzG_Dn_FJQqsbk4BwX9yyOqQ_WHySoAXh_JKcQUztV-Eu35S_ugC4ZjmSGhy2Cigy_MNj9Al_S06_5XIvr4Zod2weVXZUHxv1HSKOKcXzafhlx3AEv1-7g6j4tHVBkaSC76cbq85DJqs3BaW-ww-Wv0w_DaT_12aJAGakkDsQflA3tbS4irVN0Po37b0iLfo_uV3YGkcriXu", "state"=>"8d45906a63d343f7f38b322f8f3fb64f6afe791bd89fa909"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 638ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:34 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (170.7ms)
+Completed 200 OK in 373ms (Views: 369.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:44 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:45 -0400
+Started GET "/users/auth/facebook/callback?code=AQDEEcMhZ8av9C5SlmugQhavkWRT0NAYCx01PC3uiYbbkdaRnYdWuGgLcU5DSYd9nAkQThbjpDwK59tkAup5KHCV874lEMJlhozovnX1bo0zAIaAiZUsknaQYBOzrO5vL5O4I3XKLEazHOGkG49Wf4WI98zuvLQXsvcQwYHqqEmWeFLY_MH2Er6QyHhvbXon1M6le7XfmtoUwnPGZ1hHvZH_gGxHW_f1IjyMxw7eelGU-8jMtcP9MnQo5E-xy1KZjmZsLF0x21FJbs_lgl3gRaXP0lq_1GK8AiN4x6QgtV-NH_K0y0vMBFxqy4VdmQ3zzBT6jBfRYI-gKaUB-JpgQMem&state=29a92e353359d7246f31520fcb2734320e5e2ea2b28e1ec6" for ::1 at 2019-05-25 21:48:45 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDEEcMhZ8av9C5SlmugQhavkWRT0NAYCx01PC3uiYbbkdaRnYdWuGgLcU5DSYd9nAkQThbjpDwK59tkAup5KHCV874lEMJlhozovnX1bo0zAIaAiZUsknaQYBOzrO5vL5O4I3XKLEazHOGkG49Wf4WI98zuvLQXsvcQwYHqqEmWeFLY_MH2Er6QyHhvbXon1M6le7XfmtoUwnPGZ1hHvZH_gGxHW_f1IjyMxw7eelGU-8jMtcP9MnQo5E-xy1KZjmZsLF0x21FJbs_lgl3gRaXP0lq_1GK8AiN4x6QgtV-NH_K0y0vMBFxqy4VdmQ3zzBT6jBfRYI-gKaUB-JpgQMem", "state"=>"29a92e353359d7246f31520fcb2734320e5e2ea2b28e1ec6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 585ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:47 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.4ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 149ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:48 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:48 -0400
+Started GET "/users/auth/facebook/callback?code=AQBEoTwFuRQCoKIvAKyFB3RLmGRtBYTfd-VcZTI8stnAC0hDo83yIVD5fYA8sTaSQyUrqI3eweN3oYXMhDcTNYsoGM2bWw7HZL_2aR_SYmJeAyO3S3cgb5UoxyhIqzGCA-UHxriFQySzI0XS7zgFdB_iZHG9kk9v52Y0zn44HOE-Xj4RltEKRGxsmdTr8sIwh8vbOrSb-lBO5e8uKjx9ftOEMzxksRFdZs1a13yUKRyG3cX58hkUg4xF6fQDGX7HBl4XPmaXZVNN5iiR7YzZmHJ4EM9YDV4Dwzwv5ZCjzoCI8MwwU_e9DfnNTlm26YAEzqBOMuehcvcjd7gkOQvhEuNE&state=492583eef3960b6d56babf381edd1e77ed0b35a54ac55610" for ::1 at 2019-05-25 21:48:49 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQBEoTwFuRQCoKIvAKyFB3RLmGRtBYTfd-VcZTI8stnAC0hDo83yIVD5fYA8sTaSQyUrqI3eweN3oYXMhDcTNYsoGM2bWw7HZL_2aR_SYmJeAyO3S3cgb5UoxyhIqzGCA-UHxriFQySzI0XS7zgFdB_iZHG9kk9v52Y0zn44HOE-Xj4RltEKRGxsmdTr8sIwh8vbOrSb-lBO5e8uKjx9ftOEMzxksRFdZs1a13yUKRyG3cX58hkUg4xF6fQDGX7HBl4XPmaXZVNN5iiR7YzZmHJ4EM9YDV4Dwzwv5ZCjzoCI8MwwU_e9DfnNTlm26YAEzqBOMuehcvcjd7gkOQvhEuNE", "state"=>"492583eef3960b6d56babf381edd1e77ed0b35a54ac55610"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 609ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:51 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (15.3ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (163.6ms)
+Completed 200 OK in 388ms (Views: 383.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:53 -0400
+Started GET "/users/auth/facebook" for ::1 at 2019-05-25 21:48:54 -0400
+Started GET "/users/auth/facebook/callback?code=AQCnL4p_UpzZRMApJy2pSWSPdu5Cfl0hH8KMk5uNtGPOoIWMpVJV1EWPd-nbn-t-f6FAdaZdZqJwDIhWMTvbPuQZ3Neo_SVW2sBVjpPLE6B7IeML3Fdtf0u5VdEXGEJZIcXDKpPLPMa5KR8cPGKbtB1cwjycWEYveX00Jci4-5zwcMi8Bo_xxg6Ic7tKaWjMG_jBfafDmM_HEljIu-0pkXVvsDOBgsOgg_hQqm8T_Aj5mAyMGndZO2QBB5vILidNaIGaKE0ryoEl4IuS-x5Z0UB8NpWU8vfShBCqnRhwdC31qty5lXnQFmJ65eBHQq_AMh91zX5NHMYwoJwtpxgUFPie&state=81dab87dee9f57614e56ef1990e4bb48f15e6dddc8c1db9a" for ::1 at 2019-05-25 21:48:54 -0400
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCnL4p_UpzZRMApJy2pSWSPdu5Cfl0hH8KMk5uNtGPOoIWMpVJV1EWPd-nbn-t-f6FAdaZdZqJwDIhWMTvbPuQZ3Neo_SVW2sBVjpPLE6B7IeML3Fdtf0u5VdEXGEJZIcXDKpPLPMa5KR8cPGKbtB1cwjycWEYveX00Jci4-5zwcMi8Bo_xxg6Ic7tKaWjMG_jBfafDmM_HEljIu-0pkXVvsDOBgsOgg_hQqm8T_Aj5mAyMGndZO2QBB5vILidNaIGaKE0ryoEl4IuS-x5Z0UB8NpWU8vfShBCqnRhwdC31qty5lXnQFmJ65eBHQq_AMh91zX5NHMYwoJwtpxgUFPie", "state"=>"81dab87dee9f57614e56ef1990e4bb48f15e6dddc8c1db9a"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2443559535667703"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "juako.palomo@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 725ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-05-25 21:48:56 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_error_messages.html.erb (20.9ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/registrations/new.html.erb within layouts/application (137.7ms)
+Completed 200 OK in 338ms (Views: 335.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/events" for ::1 at 2019-05-25 21:49:08 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"events"}
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-05-25 21:49:08 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/shared/_links.html.erb (3.1ms)
+  Rendered /home/japalominos/.rvm/gems/ruby-2.5.1/gems/devise-4.6.2/app/views/devise/sessions/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 118ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
